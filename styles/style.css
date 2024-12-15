@@ -23,7 +23,7 @@ header {
     color: black;
 }
 
-.header__link_active {
+.header__link {
     text-decoration: none;
     border-bottom: 1.3px solid black;
 }
@@ -46,9 +46,6 @@ header {
 .address {
     justify-self: end;
     width: 240px;
-}
-
-.header__address {
     font-size: 18px;
     font-weight: 400;
     color: black;
@@ -56,13 +53,13 @@ header {
     line-height: 24.3px;
 }
 
-.header__address-line {
+.address-line {
     text-decoration: none;
     padding-bottom: 0px;
     border-bottom: 1px solid black;
 }
 
-.header__address-not-line {
+.address-not-line {
     list-style: none;
 }
 
@@ -155,7 +152,7 @@ header {
 .lots__heading {
     font-size: 40px;
     font-weight: 700;
-    padding: 0px 891px 27px 40px;
+    padding: 0px 0px 27px 40px;
     text-transform: uppercase;
 }
 
@@ -163,8 +160,9 @@ header {
 .lots__card-list {
     display: flex;
     list-style: none;
-    justify-content: space-between;
     position: relative;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 .lots__card-list-item {
@@ -188,22 +186,21 @@ header {
     position: relative; 
 }
 
+
+
 .card_type_film {
-    background-image: url(../images/card-lot-01.jpgп);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
+}
+
+.card_type_film, .card_type_book, .card_type_picture {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -250,7 +247,6 @@ header {
     grid-template-columns: 334px 1fr; 
     gap: 25px;
     margin: 117px 24px 180px 24px;
-    height: 595px;
 }
 
 .about__column {
@@ -287,7 +283,7 @@ header {
     font-weight: 400;
 }
 
-.about__text-one {
+.about__text-decor {
     padding-right: 5px;
     padding-bottom: 24px;
 }
@@ -299,7 +295,7 @@ header {
     margin: 120px 50px 82px 50px;
 }
 
-.footer__address {
+footer .address {
     font-size: 18px;
     font-weight: 400;
     color: black;
@@ -310,12 +306,12 @@ header {
 
 }
 
-.footer__address-line {
+footer .address-line {
     text-decoration: none;
     border-bottom: 1px solid black;
 }
 
-.footer__address-not-line {
+footer .address-not-line {
     list-style: none;
 }
 
@@ -334,7 +330,7 @@ header {
     color: black;
 }
 
-.footer__menu-link_active {
+.footer__menu-link {
     text-decoration: none;
     border-bottom: 1.3px solid black;
 }

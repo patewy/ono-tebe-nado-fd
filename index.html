@@ -9,6 +9,7 @@
     <link rel = "stylesheet" href = "./styles/global.css" />
     <link rel = "stylesheet" href = "./styles/style.css" />
   </head>
+
   <body>
 
     <header class = "header">
@@ -18,15 +19,15 @@
         <ul class = "header__links-list">
 
           <li class = "header__links-list-item header__links-list-item_no-bullit">
-            <a> главная </a>
+            <a class = "header__link_active"> главная </a>
           </li>
 
           <li class = "header__links-list-item">
-            <a class = "header__link_active" href="#0"> посмотреть лоты </a>
+            <a class = "header__link" href="#0"> посмотреть лоты </a>
           </li>
 
           <li class = "header__links-list-item">
-            <a class = "header__link_active" href="#0"> об аукционе </a>
+            <a class = "header__link" href="#0"> об аукционе </a>
           </li>
 
         </ul>
@@ -45,15 +46,11 @@
 
       <address class ="address">
 
-        <div class = "header__address">
+        <a class="address-line" href="tel:+99995555555">+9 999 555 5555</a>
 
-          <a class="header__address-line" href="tel:+99995555555">+9 999 555 5555</a>
+        <br><a class="address-line" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
 
-          <br><a class="header__address-line" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-
-          <br><a class = "header__address-not-line"> наб. Принсенграхт 263- 265, Амстердам </a>
-
-        </div>
+        <br><a class = "address-not-line"> наб. Принсенграхт 263- 265, Амстердам </a>
         
       </address>
     
@@ -104,7 +101,7 @@
             <div class = "overlay"></div>
             <a class = "card-link" href="#0">
              <article class = "card card_type_book">
-                <h4 class = "card__title">Книга, где описан один скучный день из жизни рекламного агента</h4>
+                <h3 class = "card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
                 <p class = "card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. 
                 И это всё накладывается на эпическую поэму Гомера. 
                 Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
@@ -116,7 +113,7 @@
           <div class = "overlay"></div>
            <a class = "card-link" href="#0">
             <article class = "card card_type_picture">
-              <h5 class = "card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h5>
+              <h3 class = "card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
               <p class = "card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. 
               Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
            </article> </a>
@@ -146,9 +143,9 @@
           </div>
         </div>
         <div class = "about__column">
-          <h3 class = "about__title"> Об аукционе</h3>  
+          <h4 class = "about__title"> Об аукционе</h4>  
 
-            <p class = "about__text about__text-one"> Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. 
+            <p class = "about__text about__text-decor"> Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. 
                 Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? 
                 Кому нужны все эти странные вещи, созданные любителями? </p>
 
@@ -162,13 +159,13 @@
 
     <footer class = "footer">
 
-      <address class = "footer__address">
+      <address class = "address">
 
-        <a class ="footer__address-line" href="tel:+99995555555">+9 999 555 5555</a> 
+        <a class ="address-line" href="tel:+99995555555">+9 999 555 5555</a> 
 
-        <br><a class ="footer__address-line" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <br><a class ="address-line" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
 
-        <br><a class ="footer__address-not-line"> наб. Принсенграхт 263-265, Амстердам </a>
+        <br><a class ="address-not-line"> наб. Принсенграхт 263-265, Амстердам </a>
 
       </address>
 
@@ -177,15 +174,15 @@
         <ul class = "footer__menu-list">
 
           <li class = "footer__menu-list-item">
-            <a> главная </a>
+            <a class = "footer__menu-link_active"> главная </a>
           </li>
 
           <li class = "footer__menu-list-item">
-            <a class="footer__menu-link_active" href = "#0"> посмотреть лоты</a>
+            <a class="footer__menu-link" href = "#0"> посмотреть лоты</a>
           </li>
 
           <li class = "footer__menu-list-item">
-            <a class="footer__menu-link_active" href = "#0"> об аукционе </a>
+            <a class="footer__menu-link" href = "#0"> об аукционе </a>
           </li>
 
         </ul>
