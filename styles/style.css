@@ -1,1 +1,354 @@
-/* место для вашего кода */
+header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    margin: 92px 50px 96px 50px;
+}
+
+.header__menu {
+    justify-self: start;
+}
+
+.header__links-list { 
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    list-style: circle;
+    list-style-position: inside;
+}
+
+.header__links-list-item {   
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+.header__link_active {
+    text-decoration: none;
+    border-bottom: 1.3px solid black;
+}
+
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+
+.header__logo {
+    display: block;
+    height: 105px;
+    width: 148px;
+}   
+
+.header__logo-image {
+    height: 100%;
+}
+
+.address {
+    justify-self: end;
+    width: 240px;
+}
+
+.header__address {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    font-style: normal;
+    line-height: 24.3px;
+}
+
+.header__address-line {
+    text-decoration: none;
+    padding-bottom: 0px;
+    border-bottom: 1px solid black;
+}
+
+.header__address-not-line {
+    list-style: none;
+}
+
+.cover {
+    position: relative; 
+    padding: 165px 50px 50px 50px;
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black; 
+    opacity: 60%;
+    z-index: 1; 
+}
+
+.cover__title, .cover__description {
+    position: relative; 
+    z-index: 2; 
+}
+
+.cover__title {
+    font-weight: 700;
+    font-size: 100px;
+    color: white;
+    margin-bottom: 105px ;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 0.3em;
+}
+
+
+.aligned-text {
+    display: block;
+    line-height: 1.15;
+}
+
+.aligned-text_center {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.aligned-text_right {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0em;
+}
+
+.cover__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cover__description-text {
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    word-spacing: 0.85em;
+}
+
+.bet-button {
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 12px 32px 11px 31px;
+}
+
+.lots {
+    display: flex;
+    flex-direction: column;
+    margin: 180px 24px 0px 24px;
+}
+
+.lots__heading {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 0px 891px 27px 40px;
+    text-transform: uppercase;
+}
+
+
+.lots__card-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    position: relative;
+}
+
+.lots__card-list-item {
+    width: 334px;
+    min-height: 596px;
+    position: relative;
+}
+
+.card-link {
+    display: flex;
+    height: 100%;
+    text-decoration: none;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 48px 40px;
+    position: relative; 
+}
+
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpgп);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card__title {
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.card__text {
+    font-size: 20px;
+    color: white;
+}
+
+.lots__look-more-link {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+    padding: 30px 820px 2px 40px;
+}
+
+.overlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black; 
+    opacity: 60%;
+    z-index: 1; 
+}
+
+.card__title, .card__text {
+    position: relative; 
+    z-index: 2; 
+
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 334px 1fr; 
+    gap: 25px;
+    margin: 117px 24px 180px 24px;
+    height: 595px;
+}
+
+.about__column {
+    justify-self: center;
+    color: black;
+    padding-top: 37px;
+    
+}
+
+.about__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 240px;
+    background: black;
+    border-radius: 50%; 
+}
+
+.about__logo-image {
+    width: 148px;  
+    height: 114px;
+}
+
+.about__title {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 100px 0px 100px;
+}
+
+.about__text {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.about__text-one {
+    padding-right: 5px;
+    padding-bottom: 24px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 169px 1fr;
+    align-items: start; 
+    margin: 120px 50px 82px 50px;
+}
+
+.footer__address {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    font-style: normal;
+    line-height: 24.3px;
+    justify-self: start;
+    width: 260px;
+
+}
+
+.footer__address-line {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.footer__address-not-line {
+    list-style: none;
+}
+
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+    list-style-type: none;
+    padding-top: 1px;
+}
+
+.footer__menu-list-item {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+    border-bottom: 1.3px solid black;
+}
+
+.footer__social-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+    gap: 48px;
+    align-self: start;
+    padding-top: 1px;
+}
+
+.footer__social-icon {
+    width: 48px;
+    height: 48px;
+}

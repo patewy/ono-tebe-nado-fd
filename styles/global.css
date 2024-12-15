@@ -2,12 +2,14 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  
 }
 
 body {
   width: 1100px;
   margin: 0 auto;
   font-family: Raleway, sans-serif;
+  
 }
 
 h1,
@@ -23,6 +25,7 @@ li,
 blockquote {
   margin: 0;
   padding: 0;
+  
 }
 
 a {
@@ -31,6 +34,7 @@ a {
 
 img {
   width: 100%;
+  
 }
 
 button {
