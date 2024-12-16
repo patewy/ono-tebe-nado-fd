@@ -23,11 +23,9 @@ header {
     color: black;
 }
 
-.header__link {
+.header__link_active {
     text-decoration: none;
-    border-bottom: 1.3px solid black;
 }
-
 
 .header__links-list-item_no-bullit {
     list-style: none;
@@ -186,7 +184,13 @@ header {
     position: relative; 
 }
 
-
+.card_type_film, 
+.card_type_book, 
+.card_type_picture {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
@@ -200,11 +204,7 @@ header {
     background-image: url(../images/card-lot-03.jpg);
 }
 
-.card_type_film, .card_type_book, .card_type_picture {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+
 
 .card__title {
     font-size: 22px;
@@ -222,7 +222,7 @@ header {
     font-size: 20px;
     font-weight: 400;
     text-decoration: underline;
-    padding: 30px 820px 2px 40px;
+    padding: 30px 40px 2px 40px;
 }
 
 .overlay {
@@ -330,9 +330,8 @@ footer .address-not-line {
     color: black;
 }
 
-.footer__menu-link {
+.footer__menu-link_active{
     text-decoration: none;
-    border-bottom: 1.3px solid black;
 }
 
 .footer__social-list {
