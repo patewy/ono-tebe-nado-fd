@@ -182,11 +182,6 @@ header {
     align-content: space-between;
     padding: 48px 40px;
     position: relative; 
-}
-
-.card_type_film, 
-.card_type_book, 
-.card_type_picture {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
